@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style4.css"/>
+    <title>Лаб №4</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+
+  <body class="main">
+    <header class="headerblock">
+        <img class="logo" src="logotort.jpg" alt="logo" />
+        <div class="header">
+            <h1 class="main_header"> Десерты </h1>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="menu">
+            <a href="https://ru.wikipedia.org/wiki/Безе">Безе</a>&nbsp;&nbsp;
+            <a href="https://ru.wikipedia.org/wiki/Торт">Торт</a>&nbsp;&nbsp;
+            <a href="https://ru.wikipedia.org/wiki/Чизкейк">Чизкейк</a>&nbsp;&nbsp;
+            <a href="https://ru.wikipedia.org/wiki/Пирог">Пирог</a>&nbsp;&nbsp;
+        </div>
+    </nav>
+  <div id="content" class="container-fluid">
+  <div class="row d-flex px-2"> 
+  <a id=“list_of_links”></a>
+    <div id="bf_list" class="col-12 mx-auto mb-md-3 mb-2 order-1 px-2">
+    <ol>
+      <li> <a href="http://example.com">  Абсолютная гиперссылка на главную страницу сайта example.com</a> </li>
+      <li> <a href="https://example.com">  Абсолютная на главную сайта example.com в протоколе https</a> </li>
+      <li> <a href="ftp://example.com/file.txt">  Ссылка на файл на сервере FTP без авторизации</a> </li>
+      <li> <a href="ftp://user:password@example.com/file.txt"> Ссылка на файл на сервере FTP с авторизацией</a> </li>
+      <li> <a href="https://example.com#about">  Ссылка на фрагмент страницы некоторого сайта</a> </li>
+      <li> <a href="index.html#list_of_links">  Ссылка на фрагмент текущей страницы</a> </li>
+      <li> <a href="https://example.com?parameter=value&color=red">  Ссылка с двумя параметрами в URL</a> </li>
+      <li> <a href="https://example.com/help" title="help">  Список ссылок основной навигации сайта с подписями title</a> </li>
+      <li> <a>  Cсылка без href</a> </li>
+      <li> <a href="">  Ссылка с пустым href</a> </li>
+      <li> <a href="http://example.com" rel="nofollow">  Cсылка, по которой запрещен переход поисковикам</a> </li>
+      <li> <!--noindex--><a href="http://example.com" rel="nofollow">  Запрещенная для индексации поисковиками</a><!--/noindex--> </li>
+      <li> <p>  Контекстная
+        <a href="https://ru.wikipedia.org/wiki/Маск,_Илон"
+        target="_blank">ссылка</a>
+        в тексте абзаца </p>
+        <li>
+            <a href="tort2.jpg">
+            <img src="tort2.jpg"
+            width="50" height="50">
+            </a>
+            </li>
+      <li>
+	<p><img src="tort2.jpg" usemap="#map1" width="100" height="100" alt=" Ссылка из прямоугольной области картинки"></p>
+	<p><map name="map1">
+	  <area shape="rect" alt="1" coords="10,10,90,90" href="https://blog.counter-strike.net/">
+	</map></p>
+      </li>
+      <li>
+        <a href="web1.html" target="_blank">
+        Относительная ссылка на страницу в текущем каталоге</a>
+        </li>
+      <li> <a href="demo.html">  Относительная на страницу в текущем каталоге</a></li>
+      <li> <a href="about/form.html">  Относительная на страницу в каталоге about</a></li>
+      <li> <a href="../demo.html">  Относительная на страницу в каталоге уровнем выше текущего</a></li>
+      <li> <a href="../../demo.html">  Относительная на страницу в каталоге двумя уровнями выше</a></li>
+      <li> <a href="/">  Сокращенная на главную</a></li>
+      <li> <a href="#list_of_links">  Cокращенная ссылка на внутреннюю</a></li>
+  </ol>
+  </div>
+	
+  <div class="col-12 align-self-center text-center mb-md-3 mb-2 order-md-2 order-3 px-0">
+    <h2 class="h2">Таблица</h2>
+            <table class="table">
+                <tr class="table_even">
+                    <th>Название</th>
+                    <th>Вес</th>
+                    <th>Цена</th>
+                </tr>
+                <tr class="table_odd">
+                    <td>Безе</td>
+                    <td>50гр</td>
+                    <td>100р</td>
+                </tr>
+                <tr class="table_even">
+                    <td>Торт</td>
+                    <td>2кг</td>
+                    <td>2300р</td>
+                </tr>
+    
+                <tr class="table_odd">
+                    <td>Чизкейк</td>
+                    <td>1кг</td>
+                    <td>1500р</td>
+                </tr>
+                <tr class="table_even">
+                    <td>Пирог</td>
+                    <td>1кг</td>
+                    <td>800р</td>
+                </tr>
+            </table>
+        </div>
+    <div id="superform" class="col mx-auto mb-md-2 mb-1 text-center order-md-3 order-2 pb-1">
+      <b>Форма</b>
+        <form action="/"
+        method="POST">
+
+        <label>
+          Введите имя:<br />
+          <input name="field1"
+          value=" " />
+        </label><br />
+
+        <label>
+          Введите свой email:<br />
+          <input name="field3"
+          value=" "
+          type="email" />
+        </label><br />
+
+        <label>
+          Дата:<br />
+          <input name="field3"
+          value=" "
+          type="date" />
+        </label><br />
+
+        Пол:<br />
+          <label><input type="radio" checked="checked" name="radio1" value="val1" />мужской</label>
+          <label><input type="radio" name="radio1" value="val2" />женский</label><br />
+		
+	Количество конечностей:<br />
+      <label><input type="radio" name="1" value="1"> 1</label>
+	  <label><input type="radio" name="2" value="2"> 2</label>
+	  <label><input type="radio" name="3" value="3"> 3</label>
+      <label><input type="radio" name="4" value="4"> 4</label><br />
+		
+	Сверхспособности:<br />
+          <label><select name="field4"
+          multiple="multiple">
+          <option value="дыхание под водой">дыхание под водой</option>
+          <option value="ясновидение">ясновидение</option>
+          <option value="телепатия">телепатия</option>
+          </select>
+      </label><br />
+	  
+      <label>
+        Биография:<br />
+        <textarea name="field5"> </textarea>
+      </label><br />
+
+      <label><input type="checkbox" name="check-1" />с контрактом ознакомлен (а)</label>
+
+        <input type="submit" value="Отправить" />
+    </form>
+    </div>
+    
+	  <div class="col-12 order-4 px-0">
+	    <footer>
+        <h5>© Осикова Юлия 2021 </h5>
+      </footer>
+    </div>
+  </div>
+  </div>
+	  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	
+
+  </body>
+
+</html>
